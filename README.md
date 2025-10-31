@@ -83,8 +83,9 @@
 ## 機能候補
 ### MVPリリース
 - ユーザー認証機能(ログイン・新規登録)
-- 改札・出口選択機能
+- 改札・出口検索機能
 - ルート表示・一覧機能（テキストベース）
+- ルート投稿機能
 - 投稿日時表示・情報鮮度管理
 - 投稿管理機能(マイページから編集・削除)
 - 投稿数カウント・表示
@@ -103,3 +104,6 @@
 - データベース：PostgreSQLなど
 - デプロイ先：Render(MVPリリース時無料版)
 - 使用予定のライブラリ：Bootstrap5 / Active Storage / Devise
+
+## 画面遷移図URL
+https://www.figma.com/design/BK4b0tmU4MkfO5CailX2Lt/%E7%94%BB%E9%9D%A2%E9%81%B7%E7%A7%BB%E5%9B%B3?node-id=0-1&t=8EC2T6F9FMwObaE2-1
