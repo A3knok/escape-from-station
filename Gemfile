@@ -57,3 +57,6 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
 end
+
+# 認証用
+gem 'devise'
