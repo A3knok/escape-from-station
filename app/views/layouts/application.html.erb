@@ -23,6 +23,10 @@
 
   <body>
     <%= render 'shared/header' %>
-    <%= yield %>
+    <%= render 'shared/flash_messages' %>
+
+    <main>
+      <%= yield %>
+    </main>
   </body>
 </html>
