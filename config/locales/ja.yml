@@ -1,19 +1,24 @@
 ja:
   helpers:
     submit:
-      user:
+      sign_up:
         create: 登録する
       user_session:
         create: ログイン
     label:
       user:
+        name: ユーザー名
         email: メールアドレス
         password: パスワード
-        password_confirmation: パスワード確認
+        password_confirmation: パスワード(確認用)
   
   user_sessions:
     new:
       title: ログイン
+
+  sign_up:
+    new:
+      title: 新規登録
   
   users:
     new:
