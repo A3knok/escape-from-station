@@ -59,8 +59,8 @@ group :test do
 end
 
 # 認証用
-gem 'devise'
+gem "devise"
 
 # 日本語化
-gem 'rails-i18n', '~> 7.0.0'
-gem 'devise-i18n'
+gem "rails-i18n", "~> 7.0.0"
+gem "devise-i18n"

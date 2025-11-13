@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
   # DeviseをUserモデルに適用する
   devise_for :users, controllers: {
-    sessions: 'users/sessions',
-    registrations: 'users/registrations'
+    sessions: "users/sessions",
+    registrations: "users/registrations"
   }
 
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
