@@ -21,6 +21,8 @@ ja:
     submit:
       user:
         create: 登録する
+        edit: 編集
+        destroy: 削除
       user_session:
         create: ログイン
     label:
