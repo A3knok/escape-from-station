@@ -14,6 +14,10 @@ ja:
       name: ユーザー名
       post_count: 投稿件数
       history: 投稿履歴
+  
+  routes:
+    new:
+      title: 新規投稿
 
   header:
     login: ログイン
