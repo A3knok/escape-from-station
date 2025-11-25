@@ -18,4 +18,3 @@ when 'production'
   puts "本番環境用のテストデータを読み込み中..."
   load Rails.root.join('db', 'seeds', 'production', 'real_data.rb')
 end
-

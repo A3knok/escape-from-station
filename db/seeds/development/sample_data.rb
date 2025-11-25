@@ -22,7 +22,7 @@ users = [
 # テスト用鉄道会社作成
 railway_companies_data = [
   { name: "テスト鉄道A" },
-  { name: "テスト鉄道B" }  
+  { name: "テスト鉄道B" }
 ]
 
 railway_companies = railway_companies_data.map do |company_data|
@@ -37,7 +37,7 @@ station = Station.find_or_create_by!(name: 'テスト駅')
 # テスト用出口作成
 exits = [
   { name: 'テスト出口1', direction: 'テスト方面1' },
-  { name: 'テスト出口2', direction: 'テスト方面2' },
+  { name: 'テスト出口2', direction: 'テスト方面2' }
 ]
 
 exits.each do |exit|
