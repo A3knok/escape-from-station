@@ -20,16 +20,18 @@
           </p>
 
           <!-- 右：アクションボタン -->
-          <div class="d-flex flex-column gap-1">
-            <%= link_to root_path, class: "btn btn-outline-primary btn-sm" do %>
-              <i class="fas fa-pen me-1"></i>
-              <span><%= t('helpers.submit.route.edit')%></span>
-            <% end %>
-            <%= link_to root_path, class: "btn btn-outline-danger btn-sm" do %>
-              <i class="fas fa-trash me-1"></i>
-              <span><%= t('helpers.submit.route.destroy')%></span>
-            <% end %>
-          </div>
+          <% if local_assigns[:show_actions] %>
+            <div class="d-flex flex-column gap-1">
+              <%= link_to root_path, class: "btn btn-outline-primary btn-sm" do %>
+                <i class="fas fa-pen me-1"></i>
+                <span><%= t('helpers.submit.route.edit')%></span>
+              <% end %>
+              <%= link_to root_path, class: "btn btn-outline-danger btn-sm" do %>
+                <i class="fas fa-trash me-1"></i>
+                <span><%= t('helpers.submit.route.destroy')%></span>
+              <% end %>
+            </div>
+          <% end %>
         </div>
       </div>
     <% end %>

@@ -9,6 +9,10 @@ class RoutesController < ApplicationController
     @route = Route.new
   end
 
+  def index
+    @routes = Route.all
+  end
+
   def create
     @route = current_user.routes.build(route_params)
 
