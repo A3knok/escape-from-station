@@ -1,5 +1,5 @@
 class RoutesController < ApplicationController
-  before_action :set_form_data, only: %i[ new create ]
+  before_action :set_form_data, only: %i[ new create index ]
 
   def show
     @route = current_user.routes.find(params[:id])
@@ -10,7 +10,9 @@ class RoutesController < ApplicationController
   end
 
   def index
-    @routes = Route.all
+    # @routes = Route.all
+    @q = Route.ransack(params[:q])
+    @routes = @q.result(distinct: true).includes(:gate, :exit).order(created_at: :desc)
   end
 
   def create
